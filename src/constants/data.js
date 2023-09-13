@@ -1,5 +1,29 @@
 import images from './images';
 
+
+const navbarText = {
+  home:{
+    EN:'Home',
+    CH:'首页'
+  },
+  about:{
+    EN:'About',
+    CH:'简介'
+  },
+  case:{
+    EN:'Case',
+    CH:'案例'
+  },
+  team:{
+    EN:'Team',
+    CH:'团队'
+  },
+  contact:{
+    EN:'Contact',
+    CH:'咨询'
+  },
+}
+
 const wines = [
   {
     title: 'Chapel Hill Shiraz',
@@ -79,4 +103,4 @@ const awards = [
   },
 ];
 
-export default { wines, cocktails, awards };
+export default { wines, cocktails, awards, navbarText };
