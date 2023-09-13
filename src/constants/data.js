@@ -24,6 +24,17 @@ const navbarText = {
   },
 }
 
+const headerText = {
+  header: {
+    EN:'Alodie & Associates Law Firm',
+    CH:'艾罗迪联合律师事务所'
+  },
+  subHeader: {
+    EN:'Your satisfaction is our goal',
+    CH:'认真对待每一个客户服务'
+  }
+}
+
 const wines = [
   {
     title: 'Chapel Hill Shiraz',
@@ -103,4 +114,4 @@ const awards = [
   },
 ];
 
-export default { wines, cocktails, awards, navbarText };
+export default { wines, cocktails, awards, navbarText, headerText };

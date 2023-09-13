@@ -18,7 +18,7 @@
 
 .app__wrapper {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   
   min-height: 100vh;
@@ -95,10 +95,6 @@
   line-height: 83.2px;
   letter-spacing: 0.04em;
   text-transform: capitalize;
-}
-
-.spoon__img {
-  width: 45px;
 }
 
 @media screen and (min-width: 2000px) {

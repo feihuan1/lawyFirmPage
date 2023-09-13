@@ -45,6 +45,7 @@
     background: transparent;
     border: none;
     outline: none;
+    font-size: 18px;
     color: var(--color-white);
 }
 
@@ -52,20 +53,10 @@
     color: var(--color-grey);
 }
 
-
-
 .app__navbar-smallscreen{
     display: none;
     gap: 1rem;
 }
-.smallscreen button{
-   font-size: 18px;
-}
-.largescreen button {
-    font-size: 22px;
-}
-
-
 
 .app__navbar-smallscreen_overlay {
     position: fixed;
@@ -120,7 +111,7 @@
     }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 850px) {
     .app__navbar-links {
         display: none;
     }
