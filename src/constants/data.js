@@ -35,6 +35,47 @@ const headerText = {
   }
 }
 
+const aboutText = {
+  button:{
+    EN: 'Read More',
+    CH: '全文',
+  },
+  aboutTitle:{
+    EN: 'About Us',
+    CH: '关于我们',
+  },
+  aboutText:{
+    EN: 'We are No.1 Law firm in the area, and we provide best service tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd',
+    CH: '我们是全世界最最牛B的律师事务所 省省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字',
+  },
+  historyTitle:{
+    EN: 'Our story',
+    CH: '公司历史',
+  },
+  historyText:{
+    EN: 'We started our company at 19xx tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd tbd',
+    CH: '我们成立超过好多好多年了 省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字省略一百字',
+  },
+}
+
+const caseSummary = {
+  
+}
+const people = {
+
+}
+const contact = {
+
+}
+
+const review = {
+
+}
+
+const footer = {
+  
+}
+
 const wines = [
   {
     title: 'Chapel Hill Shiraz',
@@ -114,4 +155,4 @@ const awards = [
   },
 ];
 
-export default { wines, cocktails, awards, navbarText, headerText };
+export default { wines, cocktails, awards, navbarText, headerText, aboutText };

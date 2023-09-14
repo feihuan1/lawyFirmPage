@@ -1,0 +1,24 @@
+.app__case {
+    flex-direction: column;
+    background: var(--color-black);
+    min-height: 100vh;
+}
+
+.app__case-title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 2000px) {
+
+}
+
+@media screen and (max-width: 1150px) {
+
+}
+
+@media screen and (max-width: 650px) {
+
+}

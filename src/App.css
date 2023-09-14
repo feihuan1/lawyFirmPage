@@ -18,7 +18,6 @@
 
 .app__wrapper {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   
   min-height: 100vh;
@@ -53,7 +52,7 @@
 }
 
 .custom__button {
-  background-color: var(--color-crimson);
+  background-color: var(--color-golden);
     color: var(--color-black);
     font-family: var(--font-base);
     font-weight: 700;
@@ -97,27 +96,6 @@
   text-transform: capitalize;
 }
 
-@media screen and (min-width: 2000px) {
-  .custom__button,
-  .p__cormorant {
-    font-size: 37px;
-    line-height: 67px;
-  }
-
-  .p__opensans {
-    font-size: 30px;
-    line-height: 50px;
-  }
-
-  .headtext__cormorant {
-    font-size: 150px;
-    line-height: 210px;
-  }
-
-  .spoon__img {
-    width: 80px;
-  }
-}
 
 @media screen and (max-width: 1150px) {
   .app__wrapper {
