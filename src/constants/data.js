@@ -58,21 +58,107 @@ const aboutText = {
   },
 }
 
-const caseSummary = {
-  
-}
-const people = {
+const caseSummaryText = [
+  {
+    image:[''],
+    title:{
+      EN: 'case 1',
+      CH: '案例 1'
+    },
+    summary: {
+      EN: 'this is some description of the case',
+      CH: '案件的简要说明',
+    },
+    detail: {
+      EN: 'this is a winning case that .................................rest of content',
+      CH: '这个案件我们超级无敌有够成功的。。。。。。。。。。。。。。。。。。。。。省略一百字',
+    }
+  },
+  {
+    image:[''],
+    title:{
+      EN: 'case 2',
+      CH: '案例 2'
+    },
+    summary: {
+      EN: 'this is some description of the case',
+      CH: '案件的简要说明',
+    },
+    detail: {
+      EN: 'this is a winning case that .................................rest of content',
+      CH: '这个案件我们超级无敌有够成功的。。。。。。。。。。。。。。。。。。。。。省略一百字',
+    }
+  },
+  {
+    image:[''],
+    title:{
+      EN: 'case 3',
+      CH: '案例 3'
+    },
+    summary: {
+      EN: 'this is some description of the case',
+      CH: '案件的简要说明',
+    },
+    detail: {
+      EN: 'this is a winning case that .................................rest of content',
+      CH: '这个案件我们超级无敌有够成功的。。。。。。。。。。。。。。。。。。。。。省略一百字',
+    }
+  },
+  {
+    image:[''],
+    title:{
+      EN: 'case 4',
+      CH: '案例 4'
+    },
+    summary: {
+      EN: 'this is some description of the case',
+      CH: '案件的简要说明',
+    },
+    detail: {
+      EN: 'this is a winning case that .................................rest of content',
+      CH: '这个案件我们超级无敌有够成功的。。。。。。。。。。。。。。。。。。。。。省略一百字',
+    }
+  },
+  {
+    image:[''],
+    title:{
+      EN: 'case 5',
+      CH: '案例 5'
+    },
+    summary: {
+      EN: 'this is some description of the case',
+      CH: '案件的简要说明',
+    },
+    detail: {
+      EN: 'this is a winning case that .................................rest of content',
+      CH: '这个案件我们超级无敌有够成功的。。。。。。。。。。。。。。。。。。。。。省略一百字',
+    }
+  },
+  {
+    image:[''],
+    title:{
+      EN: 'case 6',
+      CH: '案例 6'
+    },
+    summary: {
+      EN: 'this is some description of the case',
+      CH: '案件的简要说明',
+    },
+    detail: {
+      EN: 'this is a winning case that .................................rest of content',
+      CH: '这个案件我们超级无敌有够成功的。。。。。。。。。。。。。。。。。。。。。省略一百字',
+    }
+  },
+]
+const peopleText = {
 
 }
-const contact = {
+const contactText = {
 
 }
 
-const review = {
 
-}
-
-const footer = {
+const footerText = {
   
 }
 
@@ -155,4 +241,4 @@ const awards = [
   },
 ];
 
-export default { wines, cocktails, awards, navbarText, headerText, aboutText };
+export default { wines, cocktails, awards, navbarText, headerText, aboutText, caseSummaryText };
