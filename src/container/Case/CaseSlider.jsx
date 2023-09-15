@@ -60,8 +60,8 @@ const CaseSlider = ({ slides, parentWidth }) => {
               style={{width: `${parentWidth}px`}}
               className="slide"
             >
-              <h1>{context.isEnglish? slide.title.EN : slide.title.CH}</h1>
-              <p>{context.isEnglish? slide.summary.EN : slide.summary.CH}</p>
+              <h1 >{context.isEnglish? slide.title.EN : slide.title.CH}</h1>
+              <p >{context.isEnglish? slide.summary.EN : slide.summary.CH}</p>
             </div>
           ))}
         </div>

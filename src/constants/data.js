@@ -149,7 +149,7 @@ const caseSummaryText = [
     },
   },
 ];
-const peopleText = {};
+const teamText = {};
 const contactText = {};
 
 const footerText = {};
@@ -241,4 +241,5 @@ export default {
   headerText,
   aboutText,
   caseSummaryText,
+  teamText
 };

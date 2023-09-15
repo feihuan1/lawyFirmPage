@@ -28,12 +28,12 @@ const Navbar = () => {
           </a>
         </li>
         <li className="p__opensans">
-          <a href="#menu">
+          <a href="#case">
             {context.isEnglish ? navbarText.case.EN : navbarText.case.CH}
           </a>
         </li>
         <li className="p__opensans">
-          <a href="#awards">
+          <a href="#team">
             {context.isEnglish ? navbarText.team.EN : navbarText.team.CH}
           </a>
         </li>

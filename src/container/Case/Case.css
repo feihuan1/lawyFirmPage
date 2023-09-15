@@ -16,7 +16,7 @@
     height: 280px;
     margin: 0 auto;
     border-radius: 10px;
-
+    box-shadow: 3px 2px 3px var(--color-golden);
 }
 
 @media screen and (min-width: 2000px) {
