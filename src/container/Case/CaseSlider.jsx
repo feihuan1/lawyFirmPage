@@ -1,98 +1,87 @@
-import { useState } from "react";
+import { useState, useRef, useEffect, useCallback, useContext } from "react";
 
-const slideStyles = {
-    width: "100%",
-    height: "100%",
-    borderRadius: "10px",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  };
-  
-  const rightArrowStyles = {
-    position: "absolute",
-    top: "50%",
-    transform: "translate(0, -50%)",
-    right: "32px",
-    fontSize: "45px",
-    color: "#fff",
-    zIndex: 1,
-    cursor: "pointer",
-  };
-  
-  const leftArrowStyles = {
-    position: "absolute",
-    top: "50%",
-    transform: "translate(0, -50%)",
-    left: "32px",
-    fontSize: "45px",
-    color: "#fff",
-    zIndex: 1,
-    cursor: "pointer",
-  };
-  
-  const sliderStyles = {
-    position: "relative",
-    height: "100%",
-  };
-  
-  const dotsContainerStyles = {
-    display: "flex",
-    justifyContent: "center",
-  };
-  
-  const dotStyle = {
-    margin: "0 3px",
-    cursor: "pointer",
-    fontSize: "20px",
-  };
+import Context from "../../context/context";
+import './CaseSlider.css'
 
 
-const CaseSlider = ({ slides }) => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const goToPrevious = () => {
-      const isFirstSlide = currentIndex === 0;
-      const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-      setCurrentIndex(newIndex);
-    };
-    const goToNext = () => {
-      const isLastSlide = currentIndex === slides.length - 1;
-      const newIndex = isLastSlide ? 0 : currentIndex + 1;
-      setCurrentIndex(newIndex);
-    };
-    const goToSlide = (slideIndex) => {
-      setCurrentIndex(slideIndex);
-    };
-    const slideStylesWidthBackground = {
-      ...slideStyles,
-      backgroundImage: `url(${slides[currentIndex].url})`,
-    };
-  
-    return (
-      <div style={sliderStyles}>
-        <div>
-          <div onClick={goToPrevious} style={leftArrowStyles}>
-            ❰
-          </div>
-          <div onClick={goToNext} style={rightArrowStyles}>
-            ❱
-          </div>
+
+const CaseSlider = ({ slides, parentWidth }) => {
+  const timerRef = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const context = useContext(Context)
+
+  const goToPrevious = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const goToNext = useCallback(() => {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  }, [currentIndex, slides]);
+
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
+  };
+
+  const getSlidesContainerStylesWithWidth = () => ({
+    width: parentWidth * slides.length,
+    transform: `translateX(${-(currentIndex * parentWidth)}px)`,
+  });
+
+  useEffect(() => {
+    if (timerRef.current) {
+      clearTimeout(timerRef.current);
+    }
+    timerRef.current = setTimeout(() => {
+      goToNext();
+    }, 4000);
+    return () => clearTimeout(timerRef.current);
+  }, [goToNext]);
+
+  return (
+    <div className="slider-container" >
+      <div>
+        <div onClick={goToPrevious} className="arrows left">
+          ❰
         </div>
-        <div style={slideStylesWidthBackground}>
-            {currentIndex}
+        <div onClick={goToNext} className="arrows right">
+          ❱
         </div>
-        <div style={dotsContainerStyles}>
+      </div>
+
+      <div className="sliders-container">
+        <div style={getSlidesContainerStylesWithWidth()} className="slides">
           {slides.map((slide, slideIndex) => (
             <div
-              style={dotStyle}
               key={slideIndex}
-              onClick={() => goToSlide(slideIndex)}
+              style={{width: `${parentWidth}px`}}
+              className="slide"
             >
-              ●
+              <h1>{context.isEnglish? slide.title.EN : slide.title.CH}</h1>
+              <p>{context.isEnglish? slide.summary.EN : slide.summary.CH}</p>
             </div>
           ))}
         </div>
       </div>
-    );
-  };
+      <div className="dot-container">
+        {slides.map((slide, slideIndex) => (
+          <div
+            style={{
+              color: slideIndex === currentIndex ? "white" : "gray",
+            }}
+            className="dot"
+            key={slideIndex}
+            onClick={() => goToSlide(slideIndex)}
+          >
+            ●
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default CaseSlider;

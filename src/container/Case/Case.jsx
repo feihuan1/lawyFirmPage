@@ -1,35 +1,29 @@
-import React from "react";
+import {useContext} from "react";
 
+import Context from "../../context/context";
 import CaseSlider from "./CaseSlider";
-import { SubHeading, MenuItem } from "../../components";
-import { data, images } from "../../constants";
+import { SubHeading } from "../../components";
+import { data } from "../../constants";
 import "./Case.css";
 
 const Case = () => {
-  const slides = [
-    { url: `${images.welcome}`, title: "case1" },
-    { url: `${images.welcome}`, title: "case2" },
-    { url: `${images.welcome}`, title: "case3" },
-    { url: `${images.welcome}`, title: "case4" },
-    { url: `${images.welcome}`, title: "case5" },
-  ];
-  console.log(slides[0].url)
+  const context = useContext(Context)
+
+  const { caseSummaryText } = data;
 
   return (
     <div className="app__case flex__center section__padding" id="menu">
       <div className="app__case-title">
-        <SubHeading title="we make our clients satisefy" />
-        <h1 className="headtext__cormorant">Case Summry</h1>
+        <SubHeading title={context.isEnglish? "we make our clients satisefy" : '我们的宗旨就是客户满意'} />
+        <h1 className="headtext__cormorant">{context.isEnglish ? 'Case Summry' : '成功案例'}</h1>
       </div>
-      {/* ---------------- */}
-      <div>
-        
+    
       <div className='slider-container'>
-        <CaseSlider slides={slides} />
+        <CaseSlider slides={caseSummaryText} parentWidth={500} />
+  
       </div>
 
-     </div>
-      {/* -------------- */}
+
     </div>
   );
 };
