@@ -149,94 +149,106 @@ const caseSummaryText = [
     },
   },
 ];
-const teamText = {};
+const teamText = [
+  {
+    image: images.member,
+    name:{
+      EN: 'member1',
+      CH: '成员1号'
+    },
+    position: {
+      EN: 'lawyer',
+      CH: '律师'
+    },
+    intro:{
+      EN: '  best lawyer absolutely best lawyer absolutely best lawyer absolutely best lawyer absolutely best lawyer absolutely best lawyer',
+      CH: ' 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的  '
+    },
+  },
+  {
+    image: images.member,
+    name:{
+      EN: 'member2',
+      CH: '成员2号'
+    },
+    position: {
+      EN: 'lawyer',
+      CH: '律师'
+    },
+    intro:{
+      EN: '  best lawyer absolutely best lawyer absolutely best lawyer absolutely best lawyer absolutely best lawyer absolutely best lawyer',
+      CH: ' 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的  '
+    },
+  },
+  {
+    image: images.member,
+    name:{
+      EN: 'member3',
+      CH: '成员3号'
+    },
+    position: {
+      EN: 'lawyer',
+      CH: '律师'
+    },
+    intro:{
+      EN: '  best lawyer absolutely best lawyer absolutely best lawyer absolutely best lawyer absolutely best lawyer absolutely best lawyer',
+      CH: ' 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的  '
+    },
+  },
+  {
+    image: images.member,
+    name:{
+      EN: 'member4',
+      CH: '成员4号'
+    },
+    position: {
+      EN: 'lawyer',
+      CH: '律师'
+    },
+    intro:{
+      EN: '  best lawyer absolutely best lawyer absolutely best lawyer absolutely best lawyer absolutely best lawyer absolutely best lawyer',
+      CH: ' 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的  '
+    },
+  },
+  {
+    image: images.member,
+    name:{
+      EN: 'member5',
+      CH: '成员5号'
+    },
+    position: {
+      EN: 'lawyer',
+      CH: '律师'
+    },
+    intro:{
+      EN: '  best lawyer absolutely best lawyer absolutely best lawyer absolutely best lawyer absolutely best lawyer absolutely best lawyer',
+      CH: ' 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的  '
+    },
+  },
+  {
+    image: images.member,
+    name:{
+      EN: 'member6',
+      CH: '成员6号'
+    },
+    position: {
+      EN: 'lawyer',
+      CH: '律师'
+    },
+    intro:{
+      EN: '  best lawyer absolutely best lawyer absolutely best lawyer absolutely best lawyer absolutely best lawyer absolutely best lawyer',
+      CH: ' 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的 打官司厉害的不要不要的  '
+    },
+  },
+ 
+];
 const contactText = {};
 
 const footerText = {};
 
-const wines = [
-  {
-    title: "Chapel Hill Shiraz",
-    price: "$56",
-    tags: "AU | Bottle",
-  },
-  {
-    title: "Catena Malbee",
-    price: "$59",
-    tags: "AU | Bottle",
-  },
-  {
-    title: "La Vieillw Rose",
-    price: "$44",
-    tags: "FR | 750 ml",
-  },
-  {
-    title: "Rhino Pale Ale",
-    price: "$31",
-    tags: "CA | 750 ml",
-  },
-  {
-    title: "Irish Guinness",
-    price: "$26",
-    tags: "IE | 750 ml",
-  },
-];
 
-const cocktails = [
-  {
-    title: "Aperol Sprtiz",
-    price: "$20",
-    tags: "Aperol | Villa Marchesi prosecco | soda | 30 ml",
-  },
-  {
-    title: "Dark 'N' Stormy",
-    price: "$16",
-    tags: "Dark rum | Ginger beer | Slice of lime",
-  },
-  {
-    title: "Daiquiri",
-    price: "$10",
-    tags: "Rum | Citrus juice | Sugar",
-  },
-  {
-    title: "Old Fashioned",
-    price: "$31",
-    tags: "Bourbon | Brown sugar | Angostura Bitters",
-  },
-  {
-    title: "Negroni",
-    price: "$26",
-    tags: "Gin | Sweet Vermouth | Campari | Orange garnish",
-  },
-];
-
-const awards = [
-  {
-    imgUrl: images.award02,
-    title: "Bib Gourmond",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
-  },
-  {
-    imgUrl: images.award01,
-    title: "Rising Star",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
-  },
-  {
-    imgUrl: images.award05,
-    title: "AA Hospitality",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
-  },
-  {
-    imgUrl: images.award03,
-    title: "Outstanding Chef",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
-  },
-];
 
 export default {
-  wines,
-  cocktails,
-  awards,
   navbarText,
   headerText,
   aboutText,

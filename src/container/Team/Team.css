@@ -1,10 +1,41 @@
-.app__team {
-    flex-direction: column;
+.app__team { 
     min-height: 100vh;
     gap: 3rem;
+    
 }
 
 .app__team-title {
     margin-bottom: 2rem;
     text-align: center;
+    width: 70%;
+    margin: 4rem auto 8rem;
+} 
+
+.team-card-container{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    grid-auto-flow: row;
+    grid-gap: 4rem;
+}
+
+@media screen and (min-width: 2000px) {
+    .team-card-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .team-card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:975px) {
+    .team-card-container{
+        grid-template-columns: 1fr;
+    }
+
 }

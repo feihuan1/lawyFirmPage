@@ -1,0 +1,22 @@
+.member-card{
+    background-color:var(--color-black);
+    color: var(--color-white);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: 0 0 8px var(--color-golden);
+}
+
+.member-card img {
+    width: 100%;
+    border-radius: 14px;
+}
+
+.member-card h2{
+    color: var(--color-golden);
+}
+

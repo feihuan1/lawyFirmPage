@@ -46,7 +46,7 @@ const Navbar = () => {
 
       <div className="app__navbar-language largescreen">
         <button onClick={context.toggleLanguage}>
-          {context.isEnglish ? "简" : "EN"}
+          {context.isEnglish ? "中" : "EN"}
         </button>
       </div>
 
@@ -54,7 +54,7 @@ const Navbar = () => {
 
         <div className="app__navbar-language smallscreen">
           <button onClick={context.toggleLanguage}>
-            {context.isEnglish ? "简" : "EN"}
+            {context.isEnglish ? "中" : "EN"}
           </button>
         </div>
         <GiHamburgerMenu

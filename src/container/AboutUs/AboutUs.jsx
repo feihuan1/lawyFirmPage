@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { images,data } from '../../constants';
+import { data } from '../../constants';
 import './AboutUs.css';
 import Context from '../../context/context';
 
@@ -18,7 +18,8 @@ const AboutUs = () => {
         <h1 className="headtext__cormorant">{context.isEnglish ? aboutText.aboutTitle.EN : aboutText.aboutTitle.CH}</h1>
 
         <p className="p__opensans">{context.isEnglish ? aboutText.aboutText.EN : aboutText.aboutText.CH}</p>
-        <button type="button" className="custom__button">{context.isEnglish ? aboutText.button.EN : aboutText.button.CH}</button>
+        {/* client may need add info in future */}
+        {/* <button type="button" className="custom__button">{context.isEnglish ? aboutText.button.EN : aboutText.button.CH}</button> */}
       </div>
 
       <div className="about-middle-line" />
@@ -27,7 +28,8 @@ const AboutUs = () => {
         <h1 className="headtext__cormorant">{context.isEnglish ? aboutText.historyTitle.EN : aboutText.historyTitle.CH}</h1>
 
         <p className="p__opensans">{context.isEnglish ? aboutText.historyText.EN : aboutText.historyText.CH}</p>
-        <button type="button" className="custom__button">{context.isEnglish ? aboutText.button.EN : aboutText.button.CH}</button>
+          {/* client may need add info in future */}
+        {/* <button type="button" className="custom__button">{context.isEnglish ? aboutText.button.EN : aboutText.button.CH}</button> */}
       </div>
     </div>
   </div>

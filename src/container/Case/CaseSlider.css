@@ -24,7 +24,7 @@
     overflow: hidden;
     height: 100%;
     color: var(--color-white);
-    background-color: #000;
+    background-color: var(--color-black);
     border-radius: 10px;
 }
 

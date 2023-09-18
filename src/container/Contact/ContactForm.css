@@ -1,0 +1,34 @@
+.ContactForm{
+    background-color: var(--color-black);
+    color: var(--color-grey);
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    gap: 1rem;
+    width: 100%;
+    max-width: 300px;
+ 
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 8px var(--color-golden);
+}
+
+.ContactForm label{
+    display: block;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.ContactForm div {
+    width: 90%; 
+
+}
+
+.ContactForm div input,
+.ContactForm div textarea { 
+    width: 100%; 
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 0.3rem;
+}
