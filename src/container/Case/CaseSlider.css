@@ -23,7 +23,7 @@
 .sliders-container{
     overflow: hidden;
     height: 100%;
-    color: var(--color-white);
+    color: var(--color-grey);
     background-color: var(--color-black);
     border-radius: 10px;
 }

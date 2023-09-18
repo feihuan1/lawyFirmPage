@@ -74,30 +74,31 @@ const Navbar = () => {
               }}
             />
             <ul className="app__navbar-smallscreen_links">
-              <li className="p__opensans">
+              <li className="p__opensans"  onClick={() => setToggleMenu(false)}
+        >
                 <a href="#home">
                   {context.isEnglish ? navbarText.home.EN : navbarText.home.CH}
                 </a>
               </li>
-              <li className="p__opensans">
+              <li className="p__opensans" onClick={() => setToggleMenu(false)}>
                 <a href="#about">
                   {context.isEnglish
                     ? navbarText.about.EN
                     : navbarText.about.CH}
                 </a>
               </li>
-              <li className="p__opensans">
-                <a href="#menu">
+              <li className="p__opensans" onClick={() => setToggleMenu(false)}>
+                <a href="#case">
                   {context.isEnglish ? navbarText.case.EN : navbarText.case.CH}
                 </a>
               </li>
               <li className="p__opensans">
-                <a href="#awards">
+                <a href="#team" onClick={() => setToggleMenu(false)}>
                   {context.isEnglish ? navbarText.team.EN : navbarText.team.CH}
                 </a>
               </li>
               <li className="p__opensans">
-                <a href="#contact">
+                <a href="#contact" onClick={() => setToggleMenu(false)}>
                   {context.isEnglish
                     ? navbarText.contact.EN
                     : navbarText.contact.CH}

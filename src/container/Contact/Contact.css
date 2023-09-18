@@ -31,6 +31,7 @@
     align-items: center;
     height:0;
     width: 70%;
+    max-width: 700px;
 }
 
 .app__contact-content_info {
@@ -45,6 +46,7 @@
 
 
 
+
 .info-list p {
     margin: 2rem 0;
     color: var(--color-grey);
@@ -52,14 +54,3 @@
 
 
 
-@media screen and (max-width: 1150px) {
-
-
-
-    .app__contact-content_form,
-    .app__contact-content_info {
-        align-items: center;
-        text-align: center;
-    }
-
-}

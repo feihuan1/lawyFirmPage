@@ -1,10 +1,10 @@
 import SubHeading from './SubHeading/SubHeading';
-import FooterOverlay from './Footer/FooterOverlay';
+import Footer from './Footer/Footer';
 import Navbar from './Navbar/Navbar';
 
 
 export {
   SubHeading,
-  FooterOverlay,
+  Footer,
   Navbar,
 };

@@ -1,6 +1,6 @@
 .member-card{
     background-color:var(--color-black);
-    color: var(--color-white);
+    color: var(--color-grey);
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -9,6 +9,8 @@
     padding: 2rem;
     border-radius: 14px;
     box-shadow: 0 0 8px var(--color-golden);
+    text-align: center;
+    max-width: 300px;
 }
 
 .member-card img {
@@ -20,3 +22,8 @@
     color: var(--color-golden);
 }
 
+.position{
+    width: 100%;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
