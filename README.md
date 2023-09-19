@@ -1,6 +1,6 @@
 # React + Vite
 
-client requirements: simple and design, black and white,with a little gold, no animation no motion or 3d elements
+client requirements: simple design, black and white,with a little gold, no animation no motion or 3d elements
 dark/light theme may apply may not needs live demo review, english Chinese switch function is a plus(no plain text render in jsx file , need import both version render depends on context language state)
 
 ## live demo
